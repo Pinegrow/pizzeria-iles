@@ -1,19 +1,62 @@
 <script setup lang="ts">
-  // const props = defineProps({
-  // 	name: {
-  // 		type: String,
-  // 		default: 'PizzaStore',
-  // 	},
-  // })
-
-  // const emit = defineEmits(['addToCart'])
-
-  // // Use the addToCart function like this:
-  // // Eg-1: addToCart('pizza', 10)
-  // // Eg-2: (event) => addToCart('pizza', 10, event)
-  // const addToCart = (item, quantity /*, event*/) => {
-  // 	emit('addToCart', { item, quantity })
-  // }
+  const pizzas = [
+    {
+      name: 'Classic Pizza',
+      description: 'Yummiest of the lot',
+      image:
+        'https://images.unsplash.com/photo-1593246049226-ded77bf90326?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDIxfHxwaXp6YXxlbnwwfHx8fDE2MzEwODA3Njg&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop',
+      price: '$ 16.00',
+    },
+    {
+      name: 'Rompipalle Pizza',
+      description: 'Yummiest of the lot',
+      image:
+        'https://images.unsplash.com/photo-1609159085820-d9a6ff0f469e?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDIyM3x8cGl6emF8ZW58MHx8fHwxNjMxMDkyMTUz&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop',
+      price: '$ 16.00',
+    },
+    {
+      name: 'Fire & Ice Pizza',
+      description: 'Yummiest of the lot',
+      image:
+        'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDYyfHxwaXp6YXxlbnwwfHx8fDE2MzEwODA4NzU&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop',
+      price: '$ 16.00',
+    },
+    {
+      name: 'Pizza Di Casa Mia',
+      description: 'Yummiest of the lot',
+      image:
+        'https://images.unsplash.com/photo-1564936281291-294551497d81?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEyNXx8cGl6emF8ZW58MHx8fHwxNjMxMDkyMDgy&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop',
+      price: '$ 16.00',
+    },
+    {
+      name: 'Parigina Pizza',
+      description: 'Yummiest of the lot',
+      image:
+        'https://images.unsplash.com/photo-1565564194296-14db6e0bf8a3?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwMnx8cGl6emF8ZW58MHx8fHwxNjMxMDgwOTQw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop',
+      price: '$ 16.00',
+    },
+    {
+      name: 'Ettore Pizza',
+      description: 'Yummiest of the lot',
+      image:
+        'https://images.unsplash.com/photo-1604917869287-3ae73c77e227?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEyOXx8cGl6emF8ZW58MHx8fHwxNjMxMDkyMDgy&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop',
+      price: '$ 16.00',
+    },
+    {
+      name: 'La Regina Pizza',
+      description: 'Yummiest of the lot',
+      image:
+        'https://images.unsplash.com/photo-1620894599483-aefd71cb525f?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEzMXx8cGl6emF8ZW58MHx8fHwxNjMxMDkyMDgy&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop',
+      price: '$ 16.00',
+    },
+    {
+      name: 'Paesana Pizza',
+      description: 'Yummiest of the lot',
+      image:
+        'https://images.unsplash.com/photo-1572785031839-8d006462dcd4?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEyN3x8cGl6emF8ZW58MHx8fHwxNjMxMDkyMDgy&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop',
+      price: '$ 16.00',
+    },
+  ]
 </script>
 <template>
   <section class="pb-24 pt-12 text-center text-gray-50">
@@ -28,216 +71,14 @@
           </div>
         </div>
         <div class="-mx-3 flex flex-wrap justify-center mb-12">
-          <div class="p-3 w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
-            <div
-              class="bg-white border px-6 py-12 rounded-md text-center text-gray-400"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1593246049226-ded77bf90326?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDIxfHxwaXp6YXxlbnwwfHx8fDE2MzEwODA3Njg&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop"
-                class="mb-4 mx-auto rounded-md w-full sm:w-10/12"
-                alt="..."
-                width="600"
-                height="600"
-              />
-              <h4 class="font-bold mb-2 text-gray-900 text-xl">
-                Classic Pizza
-              </h4>
-              <p class="mb-2 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <p class="font-semibold font-serif mb-4 text-primary-500">
-                $ 4.00
-              </p>
-              <BaseButton label="Order Now"></BaseButton>
-            </div>
-          </div>
-          <div class="p-3 w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
-            <div
-              class="bg-white border px-6 py-12 rounded-md text-center text-gray-400"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1609159085820-d9a6ff0f469e?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDIyM3x8cGl6emF8ZW58MHx8fHwxNjMxMDkyMTUz&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop"
-                class="mb-4 mx-auto rounded-md w-full sm:w-10/12"
-                alt="..."
-                width="600"
-                height="600"
-              />
-              <h4 class="font-bold mb-2 text-gray-900 text-xl">
-                Rompipalle Pizza
-              </h4>
-              <p class="mb-2 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <p class="font-semibold font-serif mb-4 text-primary-500">
-                $ 4.00
-              </p>
-              <a
-                href="#"
-                class="border border-primary-500 hover:bg-primary-500 hover:text-white inline-block px-4 py-1 rounded text-primary-500 text-sm"
-                >Order Now</a
-              >
-            </div>
-          </div>
-          <div class="p-3 w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
-            <div
-              class="bg-white border px-6 py-12 rounded-md text-center text-gray-400"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDYyfHxwaXp6YXxlbnwwfHx8fDE2MzEwODA4NzU&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop"
-                class="mb-4 mx-auto rounded-md w-full sm:w-10/12"
-                alt="..."
-                width="600"
-                height="600"
-              />
-              <h4 class="font-bold mb-2 text-gray-900 text-xl">
-                Fire &amp; Ice Pizza
-              </h4>
-              <p class="mb-2 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <p class="font-semibold font-serif mb-4 text-primary-500">
-                $ 4.00
-              </p>
-              <a
-                href="#"
-                class="border border-primary-500 hover:bg-primary-500 hover:text-white inline-block px-4 py-1 rounded text-primary-500 text-sm"
-                >Order Now</a
-              >
-            </div>
-          </div>
-          <div class="p-3 w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
-            <div
-              class="bg-white border px-6 py-12 rounded-md text-center text-gray-400"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1564936281291-294551497d81?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEyNXx8cGl6emF8ZW58MHx8fHwxNjMxMDkyMDgy&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop"
-                class="mb-4 mx-auto rounded-md w-full sm:w-10/12"
-                alt="..."
-                width="600"
-                height="600"
-              />
-              <h4 class="font-bold mb-2 text-gray-900 text-xl">
-                Pizza Di Casa Mia
-              </h4>
-              <p class="mb-2 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <p class="font-semibold font-serif mb-4 text-primary-500">
-                $ 4.00
-              </p>
-              <a
-                href="#"
-                class="border border-primary-500 hover:bg-primary-500 hover:text-white inline-block px-4 py-1 rounded text-primary-500 text-sm"
-                >Order Now</a
-              >
-            </div>
-          </div>
-          <div class="p-3 w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
-            <div
-              class="bg-white border px-6 py-12 rounded-md text-center text-gray-400"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1565564194296-14db6e0bf8a3?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwMnx8cGl6emF8ZW58MHx8fHwxNjMxMDgwOTQw&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop"
-                class="mb-4 mx-auto rounded-md w-full sm:w-10/12"
-                alt="..."
-                width="600"
-                height="600"
-              />
-              <h4 class="font-bold mb-2 text-gray-900 text-xl">
-                Parigina Pizza
-              </h4>
-              <p class="mb-2 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <p class="font-semibold font-serif mb-4 text-primary-500">
-                $ 4.00
-              </p>
-              <a
-                href="#"
-                class="border border-primary-500 hover:bg-primary-500 hover:text-white inline-block px-4 py-1 rounded text-primary-500 text-sm"
-                >Order Now</a
-              >
-            </div>
-          </div>
-          <div class="p-3 w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
-            <div
-              class="bg-white border px-6 py-12 rounded-md text-center text-gray-400"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1604917869287-3ae73c77e227?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEyOXx8cGl6emF8ZW58MHx8fHwxNjMxMDkyMDgy&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop"
-                class="mb-4 mx-auto rounded-md w-full sm:w-10/12"
-                alt="..."
-                width="600"
-                height="600"
-              />
-              <h4 class="font-bold mb-2 text-gray-900 text-xl">Ettore Pizza</h4>
-              <p class="mb-2 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <p class="font-semibold font-serif mb-4 text-primary-500">
-                $ 4.00
-              </p>
-              <a
-                href="#"
-                class="border border-primary-500 hover:bg-primary-500 hover:text-white inline-block px-4 py-1 rounded text-primary-500 text-sm"
-                >Order Now</a
-              >
-            </div>
-          </div>
-          <div class="p-3 w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
-            <div
-              class="bg-white border px-6 py-12 rounded-md text-center text-gray-400"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1620894599483-aefd71cb525f?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEzMXx8cGl6emF8ZW58MHx8fHwxNjMxMDkyMDgy&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop"
-                class="mb-4 mx-auto rounded-md w-full sm:w-10/12"
-                alt="..."
-                width="600"
-                height="600"
-              />
-              <h4 class="font-bold mb-2 text-gray-900 text-xl">
-                La Regina Pizza
-              </h4>
-              <p class="mb-2 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <p class="font-semibold font-serif mb-4 text-primary-500">
-                $ 4.00
-              </p>
-              <a
-                href="#"
-                class="border border-primary-500 hover:bg-primary-500 hover:text-white inline-block px-4 py-1 rounded text-primary-500 text-sm"
-                >Order Now</a
-              >
-            </div>
-          </div>
-          <div class="p-3 w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
-            <div
-              class="bg-white border px-6 py-12 rounded-md text-center text-gray-400"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1572785031839-8d006462dcd4?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEyN3x8cGl6emF8ZW58MHx8fHwxNjMxMDkyMDgy&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=600&h=600&fit=crop"
-                class="mb-4 mx-auto rounded-md w-full sm:w-10/12"
-                alt="..."
-                width="600"
-                height="600"
-              />
-              <h4 class="font-bold mb-2 text-gray-900 text-xl">
-                Paesana Pizza
-              </h4>
-              <p class="mb-2 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <p class="font-semibold font-serif mb-4 text-primary-500">
-                $ 4.00
-              </p>
-              <a
-                href="#"
-                class="border border-primary-500 hover:bg-primary-500 hover:text-white inline-block px-4 py-1 rounded text-primary-500 text-sm"
-                >Order Now</a
-              >
-            </div>
-          </div>
+          <PizzaCard
+            v-for="(pizza, index) in pizzas"
+            :key="index"
+            :description="pizza.description"
+            :image="pizza.image"
+            :name="pizza.name"
+            :price="pizza.price"
+          />
         </div>
         <div>
           <BaseButton label="Full Menu" size="lg"></BaseButton>
