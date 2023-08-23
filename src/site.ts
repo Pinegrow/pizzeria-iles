@@ -4,7 +4,8 @@ export default {
   author: 'Pinegrow',
   nav: [
     { text: 'Home', link: '/' },
-    { text: `Quick Start`, link: '/quick-start' },
-    { text: 'Subscribe', link: '/subscribe' },
+    { text: 'Menu', link: '/menu' },
+    { text: 'Order', link: '/order' },
+    { text: 'About Us', link: '/about-us' },
   ],
 }
