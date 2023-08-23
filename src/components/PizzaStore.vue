@@ -71,6 +71,14 @@
     console.log(pizza)
     cart.value.push(pizza)
   }
+
+  const cartText = computed(() => {
+    const displayText =
+      cart.value.length === 0
+        ? 'Cart is empty!'
+        : `Total ${cart.value.length} items`
+    return displayText
+  })
 </script>
 <template>
   <section class="pb-24 pt-12 text-center text-gray-50">
@@ -81,7 +89,8 @@
         size="xl"
         variant="soft"
         leading-icon="i-material-symbols-shopping-basket"
-        ><span>Cart items - {{ cart.length }}</span>
+      >
+        <span>{{ cartText }}</span>
       </BaseButton>
       <div class="bg-gray-50 px-12 py-16 rounded-lg text-gray-400">
         <div class="-mx-4 flex flex-wrap items-center justify-center mb-12">
