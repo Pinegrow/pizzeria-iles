@@ -1,6 +1,6 @@
 export default {
-  title: `Vue Designer`,
-  description: 'Vue Designer îles Tailwind CSS - Quick start template',
+  title: `Pizzeria`,
+  description: 'Yummy Pizzas',
   author: 'Pinegrow',
   nav: [
     { text: 'Home', link: '/' },

@@ -19,7 +19,10 @@ export const headConfig = ({ frontmatter, site }) => {
       { property: 'author', content: site.author },
       { property: 'keywords', content: computed(() => frontmatter.tags) },
     ],
-    script: [{ children: checkDarkTheme, once: true } as TurboScript],
+    script: [
+      { children: checkDarkTheme, once: true } as TurboScript,
+      { src: 'pgia/lib/pgia.js', tagPosition: 'bodyClose' },
+    ],
   }
 }
 
