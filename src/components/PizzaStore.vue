@@ -16,7 +16,7 @@
   // }
 </script>
 <template>
-  <section class="pb-24 pt-12 text-center text-gray-50" data-pg-collapsed>
+  <section class="pb-24 pt-12 text-center text-gray-50">
     <div class="container mx-auto px-4">
       <div class="bg-gray-50 px-12 py-16 rounded-lg text-gray-400">
         <div class="-mx-4 flex flex-wrap items-center justify-center mb-12">
@@ -48,11 +48,7 @@
               <p class="font-semibold font-serif mb-4 text-primary-500">
                 $ 4.00
               </p>
-              <a
-                href="#"
-                class="border border-primary-500 hover:bg-primary-500 hover:text-white inline-block px-4 py-1 rounded text-primary-500 text-sm"
-                >Order Now</a
-              >
+              <MyButton></MyButton>
             </div>
           </div>
           <div class="p-3 w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
@@ -244,11 +240,7 @@
           </div>
         </div>
         <div>
-          <a
-            href="#"
-            class="bg-primary-500 hover:bg-primary-600 inline-block m-1 px-6 py-2 rounded text-white"
-            >Full Menu</a
-          >
+          <MyButton></MyButton>
         </div>
       </div>
     </div>

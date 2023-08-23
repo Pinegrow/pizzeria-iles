@@ -18,7 +18,6 @@
 <template>
   <section
     class="bg-gray-900 bg-opacity-95 py-12 text-center text-gray-400 lg:text-right"
-    data-pg-collapsed
   >
     <div class="container mx-auto px-4 relative">
       <div class="-mx-4 flex flex-wrap items-center">
@@ -967,11 +966,7 @@
             pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet.
             Curabitur ac sagittis neque, vel egestas est.
           </p>
-          <a
-            href="#"
-            class="bg-primary-500 hover:bg-primary-600 inline-block px-6 py-2 rounded text-white"
-            >Order Now</a
-          >
+          <MyButton></MyButton>
         </div>
       </div>
     </div>

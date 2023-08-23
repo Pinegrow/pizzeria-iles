@@ -30,11 +30,7 @@
             Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit
             amet. Curabitur ac sagittis neque, vel egestas est.
           </p>
-          <a
-            href="#"
-            class="bg-primary-500 hover:bg-primary-600 inline-block m-1 px-6 py-2 rounded text-white"
-            >Learn More</a
-          >
+          <MyButton></MyButton>
         </div>
         <div class="p-4 w-full lg:w-6/12">
           <div class="-mx-4 flex items-center flex-wrap">

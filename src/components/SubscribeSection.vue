@@ -16,7 +16,7 @@
   // }
 </script>
 <template>
-  <section class="bg-primary-500 py-12 text-gray-300" data-pg-collapsed>
+  <section class="bg-primary-500 py-12 text-gray-300">
     <div class="container mx-auto px-4 relative">
       <div class="-mx-4 flex flex-wrap items-center">
         <div class="p-4 w-full lg:w-7/12">
@@ -37,11 +37,7 @@
                 />
               </div>
               <div class="p-1 text-right w-full sm:flex-initial sm:w-auto">
-                <a
-                  href="#"
-                  class="bg-secondary-500 hover:bg-secondary-600 inline-block px-6 py-2 rounded text-white"
-                  >Subscribe</a
-                >
+                <MyButton></MyButton>
               </div>
             </div>
           </form>
