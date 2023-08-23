@@ -1,5 +1,5 @@
 /* Pinegrow generated Design Panel Init Begin */
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900|Kalam:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,600,700|Sora:100,200,300,400,500,600,700,800&display=swap');
 
 /* Pinegrow generated Design Panel Init End */
 
@@ -43,12 +43,21 @@
 
 /* Pinegrow generated Design Panel Extra Rules Begin */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-serif;
+}
+
 .poster {
   z-index: 0;
 }
 
 .poster:before {
-  background-image: url(https://images.unsplash.com/photo-1516091877740-fde016699f2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDEzfHxpc2xhbmR8ZW58MHx8fHwxNjg3MTgxNDIyfDA&ixlib=rb-4.0.3&q=80&w=1080) !important;
+  background-image: url(https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwN3x8ZmluYW5jZXxlbnwwfHx8fDE2Mjg2NDA1NTc&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max) !important;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -59,7 +68,6 @@
   height: 100%;
   z-index: -1;
   position: absolute;
-  filter: blur(0px);
 }
 
 body.poster:before {
@@ -69,7 +77,7 @@ body.poster:before {
   (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2),
   (min-width: 992px) and (min-resolution: 192dpi) {
   .poster:before {
-    background-image: url(https://images.unsplash.com/photo-1516091877740-fde016699f2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDEzfHxpc2xhbmR8ZW58MHx8fHwxNjg3MTgxNDIyfDA&ixlib=rb-4.0.3&q=80&w=2000) !important;
+    background-image: url(https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwN3x8ZmluYW5jZXxlbnwwfHx8fDE2Mjg2NDA1NTc&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=2000&fit=max) !important;
   }
 }
 body,
