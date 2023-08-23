@@ -966,7 +966,7 @@
             pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet.
             Curabitur ac sagittis neque, vel egestas est.
           </p>
-          <MyButton></MyButton>
+          <BaseButton label="Order Now"></BaseButton>
         </div>
       </div>
     </div>

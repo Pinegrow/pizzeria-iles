@@ -37,7 +37,11 @@
                 />
               </div>
               <div class="p-1 text-right w-full sm:flex-initial sm:w-auto">
-                <MyButton></MyButton>
+                <BaseButton
+                  label="Subscribe"
+                  color="secondary"
+                  size="md"
+                ></BaseButton>
               </div>
             </div>
           </form>

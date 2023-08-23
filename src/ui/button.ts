@@ -2,7 +2,7 @@ export default {
   // Inspired by https://ui.nuxtlabs.com/elements/button#preset
   base: 'focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 flex-shrink-0',
   font: 'font-medium',
-  rounded: 'rounded-3xl',
+  rounded: 'rounded-lg',
   size: {
     '2xs': 'text-xs',
     xs: 'text-xs',

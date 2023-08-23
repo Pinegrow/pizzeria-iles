@@ -48,7 +48,7 @@
               <p class="font-semibold font-serif mb-4 text-primary-500">
                 $ 4.00
               </p>
-              <MyButton></MyButton>
+              <BaseButton label="Order Now"></BaseButton>
             </div>
           </div>
           <div class="p-3 w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
@@ -240,7 +240,7 @@
           </div>
         </div>
         <div>
-          <MyButton></MyButton>
+          <BaseButton label="Full Menu" size="lg"></BaseButton>
         </div>
       </div>
     </div>

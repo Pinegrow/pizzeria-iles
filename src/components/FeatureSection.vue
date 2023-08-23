@@ -30,7 +30,7 @@
             Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit
             amet. Curabitur ac sagittis neque, vel egestas est.
           </p>
-          <MyButton></MyButton>
+          <BaseButton label="Learn More" size="lg"></BaseButton>
         </div>
         <div class="p-4 w-full lg:w-6/12">
           <div class="-mx-4 flex items-center flex-wrap">
