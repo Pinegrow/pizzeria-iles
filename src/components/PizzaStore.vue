@@ -66,10 +66,10 @@
     },
   ]
 
-  const cart = []
+  const cart = ref([])
   const addToCart = (pizza) => {
     console.log(pizza)
-    cart.push(pizza)
+    cart.value.push(pizza)
   }
 </script>
 <template>
@@ -81,8 +81,7 @@
         size="xl"
         variant="soft"
         leading-icon="i-material-symbols-shopping-basket"
-      >
-        <span>Cart items - {{ cart.length }}</span>
+        ><span>Cart items - {{ cart.length }}</span>
       </BaseButton>
       <div class="bg-gray-50 px-12 py-16 rounded-lg text-gray-400">
         <div class="-mx-4 flex flex-wrap items-center justify-center mb-12">
