@@ -43,7 +43,14 @@
       <h4 class="font-bold mb-2 text-gray-900 text-xl">{{ name }}</h4>
       <p class="mb-2 text-sm">{{ description }}</p>
       <p class="font-semibold font-serif mb-4 text-primary-500">{{ price }}</p>
-      <BaseButton label="Add To Cart"></BaseButton>
+      <BaseButton label="Add To Cart" size="md">
+        <template #trailing>
+          <BaseIcon
+            name="i-material-symbols-add-shopping-cart"
+            width="20px"
+          ></BaseIcon>
+        </template>
+      </BaseButton>
     </div>
   </div>
 </template>
