@@ -65,6 +65,12 @@
       price: '$ 16.00',
     },
   ]
+
+  const cart = []
+  const addToCart = (pizza) => {
+    console.log(pizza)
+    cart.push(pizza)
+  }
 </script>
 <template>
   <section class="pb-24 pt-12 text-center text-gray-50">
@@ -78,7 +84,6 @@
             </h3>
           </div>
         </div>
-
         <div class="-mx-3 flex flex-wrap justify-center mb-12">
           <PizzaCard
             v-for="(pizza, index) in pizzas"
@@ -87,9 +92,9 @@
             :image="pizza.image"
             :name="pizza.name"
             :price="pizza.price"
+            @add-to-cart="addToCart(pizza)"
           />
         </div>
-
         <div>
           <BaseButton label="Full Menu" size="lg"></BaseButton>
         </div>

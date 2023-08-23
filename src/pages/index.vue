@@ -6,7 +6,7 @@
     <HeroSection />
     <FeatureSection />
     <TheDivider />
-    <PizzaStore />
+    <PizzaStore client:visible />
     <DeliverySection />
     <SubscribeSection />
   </main>
