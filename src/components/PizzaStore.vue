@@ -66,32 +66,13 @@
     },
   ]
 
-  const cart = ref([])
-  const addToCart = (pizza) => {
-    console.log(pizza)
-    cart.value.push(pizza)
-  }
-
-  const cartText = computed(() => {
-    const displayText =
-      cart.value.length === 0
-        ? 'Cart is empty!'
-        : `Total ${cart.value.length} items`
-    return displayText
-  })
+  // Using a composable for the cart
+  const { addToCart } = useCart()
 </script>
 <template>
   <section class="pb-24 pt-12 text-center text-gray-50">
     <div class="container mx-auto px-4 relative">
-      <BaseButton
-        label="My Button"
-        class="absolute right-0 !rounded-3xl"
-        size="xl"
-        variant="soft"
-        leading-icon="i-material-symbols-shopping-basket"
-      >
-        <span>{{ cartText }}</span>
-      </BaseButton>
+      <FloatingCart />
       <div class="bg-gray-50 px-12 py-16 rounded-lg text-gray-400">
         <div class="-mx-4 flex flex-wrap items-center justify-center mb-12">
           <div class="px-4 text-center w-full md:w-10/12 xl:w-9/12">
