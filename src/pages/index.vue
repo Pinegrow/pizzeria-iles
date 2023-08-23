@@ -4,6 +4,7 @@
 <template>
   <main>
     <HeroSection />
+    <FeatureSection />
   </main>
 </template>
 <style scoped></style>

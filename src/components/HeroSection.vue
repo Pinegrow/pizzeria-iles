@@ -55,7 +55,7 @@
             ><span class="block border-b-2 border-current my-1 w-6"></span>
           </button>
           <div
-            class="hidden space-y-2 w-full lg:flex lg:items-center lg:space-x-4 lg:space-y-0 lg:w-auto"
+            class="hidden space-y-2 w-full lg:flex lg:items-center lg:space-x-4 lg:space-y-0 lg:w-auto flex-grow"
             data-name="nav-menu"
           >
             <div class="flex flex-col mx-auto lg:flex-row">
