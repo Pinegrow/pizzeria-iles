@@ -7,7 +7,10 @@
     <div
       class="flex flex-col bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50"
     >
-      <FloatingCart class="bottom-12 fixed right-2 z-20"></FloatingCart>
+      <FloatingCart
+        class="bottom-12 fixed right-2 z-20"
+        client:load
+      ></FloatingCart>
       <NavBar
         :class="[currentRoute.path === '/' ? 'absolute z-10' : '']"
       ></NavBar>
