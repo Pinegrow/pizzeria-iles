@@ -20,8 +20,10 @@
     <div class="container mx-auto px-4 space-y-12">
       <div class="flex flex-wrap -mx-4 items-center">
         <div class="p-4 w-full lg:w-6/12">
-          <h2 class="mb-2 text-2xl text-primary-500">Welcom to Pizzeria</h2>
-          <h3 class="font-bold mb-2 text-4xl text-gray-900">
+          <h2 class="dark:text-primary-400 mb-2 text-2xl text-primary-500">
+            Welcom to Pizzeria
+          </h2>
+          <h3 class="font-bold mb-2 text-4xl">
             Indulge Yourself With the Delicacy of Our Pizza
           </h3>
           <p class="mb-6">
@@ -91,7 +93,7 @@
                 <h4 class="font-medium mb-2 text-gray-900 text-xl">
                   Best Service
                 </h4>
-                <h3>
+                <h3 class="dark:text-gray-800">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </h3>
               </div>
@@ -193,7 +195,7 @@
                 <h4 class="font-medium mb-2 text-gray-900 text-xl">
                   Healthy &amp; Organic
                 </h4>
-                <h3>
+                <h3 class="dark:text-gray-800">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </h3>
               </div>
@@ -217,7 +219,7 @@
                 <h4 class="font-medium mb-2 text-gray-900 text-xl">
                   24/7 Delivery
                 </h4>
-                <h3>
+                <h3 class="dark:text-gray-800">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </h3>
               </div>

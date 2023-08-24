@@ -1,7 +1,6 @@
 <page>
     title: Home
 </page>
-
 <script setup lang="ts">
   import { $fetch } from 'ofetch'
 
@@ -9,7 +8,6 @@
     'https://my-json-server.typicode.com/Pinegrow/pizzeria-iles/pizzas',
   )
 </script>
-
 <template>
   <main>
     <HeroSection />
