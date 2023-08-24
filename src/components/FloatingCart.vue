@@ -4,12 +4,11 @@
 <template>
   <BaseButton
     label="My Button"
-    class="absolute right-0 !rounded-3xl"
+    class="!rounded-3xl"
     size="xl"
     variant="soft"
     leading-icon="i-material-symbols-shopping-basket"
-  >
-    <span>{{ cartText }}</span>
+    ><span>{{ cartText }}</span>
   </BaseButton>
 </template>
 <style scoped></style>
