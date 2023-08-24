@@ -1,5 +1,12 @@
 <script setup lang="ts">
-  import pizzas from '~~/db.json'
+  // import pizzas from '~~/db.json'
+
+  defineProps({
+    pizzas: {
+      type: Array,
+      default: () => [],
+    },
+  })
 
   // Using a composable for the cart
   const { addToCart } = useCart()

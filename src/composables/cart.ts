@@ -2,7 +2,6 @@ const cart = ref([])
 
 export const useCart = () => {
   const addToCart = (pizza) => {
-    console.log(pizza)
     cart.value.push(pizza)
   }
 
