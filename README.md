@@ -1,3 +1,15 @@
+# Pizzeria with îles
+
+This repository was live-designed with Vue Designer by following the free YouTube course "**Pizzeria Static HTML into Vue Islands with 🏝 Iles, Vitepress & Astro**", which is part of the "**Learn With Vue Designer**" series. Check it out [here](https://docs.pinegrow.com/docs/vue/tutorials-courses/).
+
+"**Pizzeria**" is a simple MPA-SSG for a pizza shop that displays a list of pizzas in its store and allows users to add the pizzas to a cart. The cart is maintained in a `cart` composable and displays the cart size on a floating cart button.
+
+This is a sample project created using:
+- Source HTML page - https://library.pinegrow.com/tailwind/templates/yummypizza_tw/
+- Starter Template - [Vue Designer îles Tailwind CSS - Quick start template](https://github.com/pinegrow/pg-iles-tailwindcss-custom) (see next section for its Readme)
+
+Final Output Demo - https://magnificent-frangollo-920e37.netlify.app/
+
 # Vue Designer îles Tailwind CSS - Quick start template
 
 This is a starter template that pre-includes the [Pinegrow îles Module](https://www.npmjs.com/package/@pinegrow/iles-module), [Pinegrow Tailwind CSS Plugin](https://www.npmjs.com/package/@pinegrow/tailwindcss-plugin) and other goodies for Vue Designer.
