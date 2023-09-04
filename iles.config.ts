@@ -9,7 +9,7 @@ import AutoImportAPIs from 'unplugin-auto-import/vite'
 // import myIlesModule from './src/modules/my-module'
 
 export default defineConfig({
-  siteUrl: 'https://magnificent-frangollo-920e37.netlify.app',
+  siteUrl: 'https://pg-pizzeria-astro.netlify.app/',
   // turbo: true,
   jsx: 'preact', // 'solid', 'react', 'vue'
   svelte: true,
