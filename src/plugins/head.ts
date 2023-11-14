@@ -7,6 +7,10 @@ type TurboScript = Script & { once: true }
 
 export const headConfig = ({ frontmatter, site }) => {
   return {
+    title: computed(() => frontmatter.title),
+    templateParams: { separator: '|', siteName: 'Pizzeria' },
+    titleTemplate: '%s %separator %siteName',
+
     htmlAttrs: { lang: 'en-US' },
 
     // Other meta tags are added in MetaTags.vue using the Head componentsummary_large_image
