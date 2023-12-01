@@ -1,4 +1,7 @@
 /* Pinegrow generated Design Panel Begin */
+/* eslint-disable */
+/* prettier-disable */
+/* @ts-nocheck */
 
 const pg_colors = {
   gray: {
@@ -149,6 +152,10 @@ const pg_colors = {
 
 const pg_fonts = { sans: ["'Asap', sans-serif"], serif: ["'Sora', sans-serif"] }
 
+const pg_font_urls = [
+  'https://fonts.googleapis.com/css?family=Asap:400,500,600,700|Sora:100,200,300,400,500,600,700,800&display=swap',
+]
+
 const pg_backgrounds = {
   'design-image':
     "url('https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwN3x8ZmluYW5jZXxlbnwwfHx8fDE2Mjg2NDA1NTc&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max')",
@@ -156,10 +163,19 @@ const pg_backgrounds = {
     "url('https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwN3x8ZmluYW5jZXxlbnwwfHx8fDE2Mjg2NDA1NTc&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=2000&fit=max')",
 }
 
-/* Pinegrow generated Design Panel End */
+const pg_background_urls = {
+  'design-image':
+    'https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwN3x8ZmluYW5jZXxlbnwwfHx8fDE2Mjg2NDA1NTc&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max',
+  'design-image-large':
+    'https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwN3x8ZmluYW5jZXxlbnwwfHx8fDE2Mjg2NDA1NTc&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=2000&fit=max',
+}
 
 module.exports = {
   pg_colors,
   pg_fonts,
+  pg_font_urls,
   pg_backgrounds,
+  pg_background_urls,
 }
+
+/* Pinegrow generated Design Panel End */
