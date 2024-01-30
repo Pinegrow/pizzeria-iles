@@ -42,19 +42,29 @@ Open your project in Vue Designer and follow the instructions displayed in the C
 npm run dev # SPA during development
 ```
 
-### Preview
-
-```bash
-npm run now # build & preview
-```
-
 ### Build
 
 ```bash
 npm run build # MPA SSG (islands architecture)
 ```
 
-And you will see the generated file in `dist` that's ready to be served.
+### Analyze
+
+```bash
+npm run analyze # bundle sizes
+```
+
+### Preview
+
+```bash
+npm run now # build & preview
+```
+
+### Lighthouse
+
+```bash
+npm run unlighthouse # Uses npx unlighthouse from https://unlighthouse.dev/ to run lighthouse on entire site (all pages)
+```
 
 ### Deploy to Netlify
 
