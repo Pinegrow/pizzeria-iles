@@ -8,6 +8,8 @@ import type { LiveDesignerOptions } from '@pinegrow/vite-plugin'
 import AutoImportAPIs from 'unplugin-auto-import/vite'
 // import myIlesModule from './src/modules/my-module'
 
+// import { visualizer } from 'rollup-plugin-visualizer'
+
 export default defineConfig({
   siteUrl: 'https://pg-pizzeria-iles.netlify.app/',
   // turbo: true,
@@ -89,17 +91,6 @@ export default defineConfig({
   //   //...
   // },
   vite: {
-    resolve: {
-      alias: {
-        /* Must be either an object, or an array of { find, replacement, customResolver } pairs. */
-        /* Refer to: https://vitejs.dev/config/shared-options.html#resolve-alias */
-        /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
-
-        '@': fileURLToPath(new URL('./src', import.meta.url)),
-        '~': fileURLToPath(new URL('./src', import.meta.url)),
-        '~~': fileURLToPath(new URL('./', import.meta.url)),
-      },
-    },
     plugins: [
       // For details, refer to https://github.com/antfu/unplugin-auto-import#configuration
       AutoImportAPIs({
@@ -137,6 +128,25 @@ export default defineConfig({
       }),
       // VueDevTools(),
     ],
+
+    // build: {
+    //   // Vite uses Rollup under the hold, so rollup options & plugins can be used for advanced usage
+    //   rollupOptions: {
+    //     plugins: [visualizer()],
+    //   },
+    // },
+
+    resolve: {
+      alias: {
+        /* Must be either an object, or an array of { find, replacement, customResolver } pairs. */
+        /* Refer to: https://vitejs.dev/config/shared-options.html#resolve-alias */
+        /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+
+        '@': fileURLToPath(new URL('./src', import.meta.url)),
+        '~': fileURLToPath(new URL('./src', import.meta.url)),
+        '~~': fileURLToPath(new URL('./', import.meta.url)),
+      },
+    },
   },
   //...
 })
