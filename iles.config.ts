@@ -11,7 +11,7 @@ import AutoImportAPIs from 'unplugin-auto-import/vite'
 // import { visualizer } from 'rollup-plugin-visualizer'
 
 export default defineConfig({
-  siteUrl: 'https://pg-pizzeria-iles.netlify.app/',
+  siteUrl: 'https://pizzeria-iles.netlify.app/',
   // turbo: true,
   jsx: 'preact', // 'solid', 'react', 'vue'
   svelte: true,
