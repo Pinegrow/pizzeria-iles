@@ -150,7 +150,10 @@ const pg_colors = {
   },
 }
 
-const pg_fonts = { sans: ["'Asap', sans-serif"], serif: ["'Sora', sans-serif"] }
+const pg_fonts = {
+  sans: ["'Asap', sans-serif"],
+  serif: ["'Sora', sans-serif"],
+}
 
 const pg_font_urls = [
   'https://fonts.googleapis.com/css?family=Asap:400,500,600,700|Sora:100,200,300,400,500,600,700,800&display=swap',
