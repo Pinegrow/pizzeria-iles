@@ -1,0 +1,256 @@
+{
+  "files": {
+    "src/components/HeroSection.vue": {
+      "frameworks": [
+        "pg.insight.events",
+        "vite-plugin-vue-devtools",
+        "pg.vue.tree.painter",
+        "@vue/devtools",
+        "pg.css.grid",
+        "project",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "app_designer",
+        "@islands/pages",
+        "vue",
+        "iles",
+        "@pinegrow/iles-module",
+        "unplugin-vue-components",
+        "unplugin-auto-import",
+        "@unocss/preset-icons",
+        "tw.flowbite",
+        "tw",
+        "pg.html"
+      ]
+    },
+    "src/components/PizzaStore.vue": {
+      "frameworks": [
+        "vite-plugin-vue-devtools",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "@vue/devtools",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "@unocss/preset-icons",
+        "@islands/pages",
+        "pg.code-validator",
+        "project",
+        "pg.project.items",
+        "pg.asset.manager",
+        "unplugin-auto-import",
+        "app_designer",
+        "vue",
+        "unplugin-vue-components",
+        "iles",
+        "@pinegrow/iles-module",
+        "tw",
+        "pg.html"
+      ]
+    },
+    "src/layouts/default.vue": {
+      "frameworks": [
+        "vite-plugin-vue-devtools",
+        "@vue/devtools",
+        "@unocss/preset-icons",
+        "@islands/pages",
+        "unplugin-auto-import",
+        "unplugin-vue-components",
+        "@pinegrow/iles-module",
+        "iles",
+        "vue",
+        "app_designer",
+        "project",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "tw",
+        "pg.html"
+      ]
+    },
+    "src/components/FloatingCart.vue": {
+      "frameworks": [
+        "vite-plugin-vue-devtools",
+        "@vue/devtools",
+        "@unocss/preset-icons",
+        "@islands/pages",
+        "unplugin-auto-import",
+        "unplugin-vue-components",
+        "@pinegrow/iles-module",
+        "iles",
+        "vue",
+        "app_designer",
+        "project",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "tw",
+        "pg.html"
+      ]
+    },
+    "src/pages/index.vue": {
+      "frameworks": [
+        "vite-plugin-vue-devtools",
+        "pg.insight.events",
+        "@vue/devtools",
+        "pg.vue.tree.painter",
+        "@unocss/preset-icons",
+        "@islands/pages",
+        "pg.css.grid",
+        "unplugin-auto-import",
+        "pg.image.overlay",
+        "project",
+        "unplugin-vue-components",
+        "pg.code-validator",
+        "@pinegrow/iles-module",
+        "pg.project.items",
+        "iles",
+        "pg.asset.manager",
+        "vue",
+        "app_designer",
+        "tw",
+        "pg.html"
+      ]
+    },
+    "src/components/FeatureSection.vue": {
+      "frameworks": [
+        "vite-plugin-vue-devtools",
+        "@vue/devtools",
+        "@unocss/preset-icons",
+        "@islands/pages",
+        "unplugin-auto-import",
+        "unplugin-vue-components",
+        "@pinegrow/iles-module",
+        "iles",
+        "vue",
+        "app_designer",
+        "project",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "tw",
+        "pg.html"
+      ]
+    },
+    "src/components/PizzaCard.vue": {
+      "frameworks": [
+        "vite-plugin-vue-devtools",
+        "@vue/devtools",
+        "@unocss/preset-icons",
+        "@islands/pages",
+        "unplugin-auto-import",
+        "unplugin-vue-components",
+        "@pinegrow/iles-module",
+        "iles",
+        "vue",
+        "app_designer",
+        "project",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "tw",
+        "pg.html"
+      ]
+    },
+    "src/components/MetaTags.vue": {
+      "frameworks": [
+        "vite-plugin-vue-devtools",
+        "@vue/devtools",
+        "@unocss/preset-icons",
+        "@islands/pages",
+        "unplugin-auto-import",
+        "unplugin-vue-components",
+        "@pinegrow/iles-module",
+        "iles",
+        "vue",
+        "app_designer",
+        "project",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "tw",
+        "pg.html"
+      ]
+    }
+  },
+  "open-pages": ["src/components/HeroSection.vue"],
+  "template_framework_id": "vue",
+  "urls": {
+    "src/components/HeroSection.vue": {
+      "open-page-views": [{ "w": 768, "h": 0 }]
+    },
+    "src/components/PizzaStore.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "src/layouts/default.vue": { "open-page-views": [{ "w": 1024, "h": 0 }] },
+    "src/components/FloatingCart.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "src/pages/index.vue": { "open-page-views": [{ "w": 1024, "h": 0 }] },
+    "src/components/FeatureSection.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "src/components/PizzaCard.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "src/components/MetaTags.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    }
+  },
+  "recent-classes": [
+    "bg-sky-600",
+    "text-amber-400",
+    "text-2xl",
+    "text-3xl",
+    "dark:text-gray-800",
+    "dark:text-primary-400",
+    "fixed",
+    "z-20"
+  ],
+  "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
+  "frameworks": [
+    "pg.insight.events",
+    "vite-plugin-vue-devtools",
+    "pg.vue.tree.painter",
+    "@vue/devtools",
+    "pg.css.grid",
+    "project",
+    "pg.image.overlay",
+    "pg.code-validator",
+    "pg.project.items",
+    "pg.asset.manager",
+    "app_designer",
+    "@islands/pages",
+    "vue",
+    "iles",
+    "@pinegrow/iles-module",
+    "unplugin-vue-components",
+    "unplugin-auto-import",
+    "@unocss/preset-icons",
+    "tw.flowbite",
+    "tw",
+    "pg.html"
+  ],
+  "active-design-provider": "tw"
+}
