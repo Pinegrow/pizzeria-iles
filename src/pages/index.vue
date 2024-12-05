@@ -13,7 +13,7 @@
     <HeroSection />
     <FeatureSection />
     <TheDivider />
-    <IslandPizzaStore client:visible :pizzas="pizzas" />
+    <PizzaStore client:visible :pizzas="pizzas" />
     <DeliverySection />
     <SubscribeSection />
   </main>
