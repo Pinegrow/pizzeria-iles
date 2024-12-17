@@ -1,19 +1,22 @@
 import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'iles'
+import type { LiveDesignerOptions } from '@pinegrow/vite-plugin'
+import AutoImportAPIs from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
 import VueDevTools from 'vite-plugin-vue-devtools'
-import type { LiveDesignerOptions } from '@pinegrow/vite-plugin'
-import AutoImportAPIs from 'unplugin-auto-import/vite'
 import { unheadComposablesImports } from 'unhead'
 
 // import myIlesModule from './src/modules/my-module'
 
 // import { visualizer } from 'rollup-plugin-visualizer'
 
+import site from './src/site'
+const { url: siteUrl } = site
+
 export default defineConfig({
-  siteUrl: 'https://pizzeria-iles.netlify.app/',
+  siteUrl,
   // turbo: true,
   jsx: 'preact', // 'solid', 'react', 'vue'
   svelte: true,
@@ -31,6 +34,9 @@ export default defineConfig({
           tailwindcss: {
             configPath: 'tailwind.config.ts',
             cssPath: '@/assets/css/tailwind.css',
+            // themePath: false, // Set to false so that Design Panel is not used
+            // restartOnConfigUpdate: true,
+            restartOnThemeUpdate: true,
           },
           // plugins: [
           //   {
@@ -46,6 +52,7 @@ export default defineConfig({
     ],
     //...
   ],
+
   markdown: {
     rehypePlugins: [
       [
@@ -58,6 +65,7 @@ export default defineConfig({
       ],
     ],
   },
+
   // Update config as per your needs
   // For details, refer to https://github.com/antfu/unplugin-vue-components#configuration
   components: {
@@ -69,7 +77,7 @@ export default defineConfig({
     // extensions: ['vue', 'jsx', 'tsx', 'js', 'ts', 'mdx', 'svelte'] // already included by iles
 
     // allow auto import and register components used in markdown
-    // include: [/\.vue$/, /\.vue\?vue/, /\.mdx?/] // already included by iles
+    // include: [/\.vue$/, /\.vue\?vue/, /\.md$/, /\.mdx?/] // already included by iles
 
     // resolvers: [], // Auto-import using resolvers
 
@@ -77,6 +85,7 @@ export default defineConfig({
 
     dts: 'components.d.ts',
   },
+
   // Update config as per your needs
   // For details, refer to https://iles.pages.dev/guide/plugins#islandspages
 
@@ -92,6 +101,15 @@ export default defineConfig({
   // extendRoutes (routes) {
   //   //...
   // },
+
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => tag === 'lite-youtube',
+      },
+    },
+  },
+
   vite: {
     plugins: [
       // For details, refer to https://github.com/antfu/unplugin-auto-import#configuration
@@ -117,6 +135,7 @@ export default defineConfig({
           'src/composables',
           'src/utils',
           'src/stores',
+          '**/pg-*/**', // To auto-import composables from Vue Designer plugins.
         ],
         vueTemplate: true,
         dts: 'auto-imports.d.ts',
@@ -127,6 +146,11 @@ export default defineConfig({
             prefix: 'i-', // default prefix, do not change
           }),
         ],
+        content: {
+          pipeline: {
+            include: ['./src/**/*'],
+          },
+        },
       }),
       VueDevTools(),
     ],
