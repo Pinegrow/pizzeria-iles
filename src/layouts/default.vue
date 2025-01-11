@@ -1,5 +1,6 @@
 <script setup lang="ts">
-  const currentRoute = useRoute()
+  useHeadAndMeta()
+  const { route } = usePage()
 </script>
 <template>
   <div>
@@ -9,7 +10,8 @@
     >
       <FloatingCart class="bottom-12 fixed right-2 z-20" client:load />
       <NavBar
-        :class="[currentRoute.path === '/' ? 'absolute z-10' : '']"
+        :class="[route.path === '/' ? 'absolute z-10' : '']"
+        :current-path="route.path"
       ></NavBar>
       <div class="shadow">
         <slot />

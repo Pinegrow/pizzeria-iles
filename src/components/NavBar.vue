@@ -1,14 +1,12 @@
 <script setup lang="ts">
-  import { computed } from 'vue'
-  import { useNavMenu } from '@/composables/nav-menu'
+  defineProps({
+    currentPath: {
+      type: String,
+      default: '/',
+    },
+  })
 
-  const { navlinks, currentPath } = useNavMenu()
-  const desktopNavTabs = computed(() => {
-    return navlinks.value.slice(0, 3)
-  })
-  const mobileNavTabs = computed(() => {
-    return navlinks.value.slice(3, navlinks.value.length)
-  })
+  const { allNavs, navsPrimary, navsSecondary } = useNavMenu()
 </script>
 <template>
   <div class="w-full">
@@ -19,31 +17,35 @@
             <div class="flex flex-shrink-0 items-center">
               <a
                 href="/"
-                class="bg-primary-500 flex-col font-bold font-serif hover:text-opacity-75 inline-flex items-center leading-none mr-4 p-6 space-y-2 text-white text-xl"
-                ><svg
+                class="flex items-center text-primary-600 dark:text-primary-200"
+              >
+                <svg
                   version="1.0"
                   xmlns="http://www.w3.org/2000/svg"
                   width="2.5em"
                   xml:space="preserve"
                   stroke="currentColor"
-                  viewBox="0 0 64 64"
+                  fill="none"
+                  stroke-width="3px"
+                  viewBox="0 0 48 48"
                   height="2.5em"
+                  class="font-extrabold mr-2 text-xl"
                 >
                   <path
-                    d="M45.432 45.432A18.937 18.937 0 0132 51c-10.486 0-19-8.514-19-19s8.514-19 19-19 19 8.514 19 19H32l13.432 13.432zM32 8v48m16.971-40.971L15.029 48.971M51 32H8m37 13L15.029 15.029M19 27l-1 1m27-2v1m-9 17v-2m1-23h-1"
-                    fill="none"
-                    stroke-width="2"
+                    d="M33 24a14.46 14.46 0 00-2.69-7.91 14.66 14.66 0 00-1-1.24c-.18-.2-.36-.4-.56-.59s-.39-.38-.59-.56A14.53 14.53 0 005.41 30.9a5.38 5.38 0 01.39.75 8.43 8.43 0 01.71 4.79 8.43 8.43 0 014.79.71 5.38 5.38 0 01.75.39 14.57 14.57 0 0011.66.47"
                   ></path>
                   <path
-                    d="M52.126 32.846a2.99 2.99 0 01-1.188-2.21C50.251 20.785 42.027 13 32 13c-10.486 0-19 8.514-19 19s8.514 19 19 19c4.932 0 9.427-1.883 12.806-4.969a2.396 2.396 0 011.496-.639c.119-.015.247-.023.381-.03a2.409 2.409 0 012.434 3.131v.001a2.013 2.013 0 01-.519.84C44.283 53.461 38.436 56 32 56 18.754 56 8 45.246 8 32S18.754 8 32 8c12.783 0 23.245 10.015 23.961 22.619a2.745 2.745 0 01-.959 2.22l.007.008a2.21 2.21 0 01-2.766.087l-.117-.088z"
-                    fill="none"
-                    stroke-width="2"
-                  ></path></svg
-                ><span>The Pizzeria</span>
+                    d="M30.93 10.62s0 1.46-2.18 3.64M44 24a15 15 0 01-30 0zm-15 4v11m-3-12l-7 7m20 0l-7-7"
+                  ></path>
+                  <path d="M-423-219h690v690h-690z"></path>
+                </svg>
+                <h6 class="font-extrabold leading-none pt-2 text-xl">
+                  Nature's<br />Delight
+                </h6>
               </a>
             </div>
-            <NavBarDesktopMenu
-              :navlinks="desktopNavTabs"
+            <NavPrimary
+              :navs="navsPrimary"
               :current-path="currentPath"
               class="hidden sm:flex sm:ml-6"
               client:media="screen and (min-width: 640px)"
@@ -51,28 +53,24 @@
           </div>
           <DarkModeSwitch client:load />
           <div class="-mr-2 items-center relative">
-            <NavBarMobileMenuButton
-              v-if="mobileNavTabs.length"
+            <NavHamburger
+              v-if="navsSecondary.length"
               class="hidden sm:block"
               client:load
             />
-            <NavBarMobileMenuButton
-              v-if="navlinks.length"
-              class="sm:hidden"
-              client:load
-            />
-            <NavBarMobileMenu
+            <NavHamburger v-if="allNavs.length" class="sm:hidden" client:load />
+            <NavSecondary
               class="hidden sm:flex sm:justify-end absolute right-0 mt-4"
-              :navlinks="mobileNavTabs"
+              :navs="navsSecondary"
               :current-path="currentPath"
               client:media="screen and (min-width: 640px)"
             />
           </div>
         </div>
       </div>
-      <NavBarMobileMenu
+      <NavSecondary
         class="sm:hidden"
-        :navlinks="navlinks"
+        :navs="allNavs"
         :current-path="currentPath"
         client:media="screen and (max-width: 640px)"
       />
