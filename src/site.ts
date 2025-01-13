@@ -1,10 +1,12 @@
 export default {
-  title: `Pizzeria`,
+  title: 'Pizzeria',
   description: 'Yummy Pizzas',
   logo: 'i-vscode-icons:file-type-coffeelint',
   author: 'Pinegrow',
   url: 'https://pizzeria-iles.netlify.app',
   github: 'https://github.com/pinegrow/pizzeria-iles',
+  ogImageUrl: 'og-image.jpg', // absolute url (or) from public folder
+  generator: 'https://vuedesigner.com',
   defaultLocale: 'en', // default
   identity: {
     type: 'Organization',

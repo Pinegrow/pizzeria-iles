@@ -13,7 +13,6 @@
     "build": "iles build",
     "preview": "iles preview --open --port 5050",
     "typecheck": "vue-tsc --noEmit",
-    "vue-devtools": "vue-devtools",
     "lint": "npm run lint:fix && npm run format",
     "lint:fix": "eslint --fix --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts ./ --ignore-path .gitignore",
     "format": "prettier --write \"**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts,html,css,md,mdx,json}\" !public --ignore-path .gitignore"
@@ -40,7 +39,6 @@
     "@types/node": "^22.7.4",
     "@unhead/schema-org": "^1.11.15",
     "@unocss/preset-icons": "^0.62.4",
-    "@vue/devtools": "^7.4.6",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
