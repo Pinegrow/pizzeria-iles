@@ -15,7 +15,7 @@
     "typecheck": "vue-tsc --noEmit",
     "lint": "npm run lint:fix && npm run format",
     "lint:fix": "eslint --fix --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts ./ --ignore-path .gitignore",
-    "format": "prettier --write \"**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts,html,css,md,mdx,json}\" !public --ignore-path .gitignore"
+    "format": "prettier --write \"**/*.{html,vue,svelte,astro,js,jsx,cjs,mjs,ts,tsx,cts,mts,css,md,mdx,json}\" !public --ignore-path .gitignore"
   },
   "engines": {
     "node": "^14.18 || >= 16.0.0"
@@ -23,6 +23,7 @@
   "dependencies": {
     "@vueuse/core": "^11.1.0",
     "defu": "^6.1.4",
+    "ofetch": "^1.4.0",
     "pinia": "^2.2.2",
     "vee-validate": "^4.13.2"
   },
@@ -44,7 +45,6 @@
     "eslint-config-prettier": "^9.1.0",
     "iles": "^0.10.0-beta.1",
     "npm-run-all": "^4.1.5",
-    "ofetch": "^1.4.0",
     "postcss": "^8.4.47",
     "preact": "^10.24.1",
     "preact-render-to-string": "^6.5.11",
